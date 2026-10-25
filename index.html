@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Research & Notes | Your Name</title>
+    
+    <!-- KaTeX for rendering LaTeX math in browser -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
 
+    <style>
+        :root {
+            --primary: #0055a5;
+            --text: #222222;
+            --bg-light: #f8f9fa;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.7;
+            background-color: #ffffff;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+        }
+
+        h1 { margin: 0 0 5px 0; font-size: 2.2rem; color: #111; }
+        .subtitle { font-size: 1.1rem; color: #555; margin-bottom: 15px; }
+
+        .links a {
+            margin-right: 15px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .links a:hover { text-decoration: underline; }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #111;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+
+        .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+        .tag { background: #eef4fb; color: var(--primary); padding: 4px 10px; border-radius: 4px; font-size: 0.9rem; font-weight: 500; }
+
+        /* Notes Cards */
+        .note-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .note-card h3 { margin: 0 0 10px 0; font-size: 1.2rem; }
+        .note-meta { font-size: 0.85rem; color: #666; margin-bottom: 10px; }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 14px;
+            background-color: var(--primary);
+            color: white !important;
+            border-radius: 4px;
+            font-size: 0.88rem;
+            margin-right: 8px;
+            margin-top: 10px;
+            text-decoration: none !important;
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary) !important;
+            border: 1px solid var(--primary);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <div class="subtitle">Physics Researcher | Theoretical Physics</div>
+        <div class="links">
+            <a href="mailto:your.email@university.edu">Email</a>
+            <a href="https://github.com/approxconst" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Google Scholar / arXiv</a>
+            <a href="#" target="_blank">Download CV (PDF)</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a physics researcher interested in fundamental physics and derivations. 
+            My primary goal with this site is to share clear, detailed $\LaTeX$ notes, derivations, and study resources for students and researchers interested in similar topics.
+        </p>
+    </section>
+
+    <section id="research">
+        <h2>Research Interests</h2>
+        <div class="tags">
+            <span class="tag">Quantum Mechanics</span>
+            <span class="tag">Statistical Mechanics</span>
+            <span class="tag">Classical Electrodynamics</span>
+            <span class="tag">Mathematical Methods</span>
+        </div>
+    </section>
+
+    <section id="notes">
+        <h2>Lecture Notes & Derivations</h2>
+
+        <!-- Note Item 1 -->
+        <div class="note-card">
+            <h3>Quantum Mechanics: Time-Dependent Perturbation Theory</h3>
+            <div class="note-meta">Last updated: Oct 2026 • Format: Web ($\LaTeX$) & PDF</div>
+            <p>
+                Detailed derivation of Fermi's Golden Rule starting from the time-dependent Schrödinger equation:
+            </p>
+            <p>
+                $$i\hbar \frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \hat{H} \Psi(\mathbf{r},t)$$
+            </p>
+            <a href="notes/quantum_mechanics.pdf" class="btn" target="_blank">Download PDF</a>
+            <a href="#" class="btn btn-outline">Read Source TeX</a>
+        </div>
+
+        <!-- Note Item 2 -->
+        <div class="note-card">
+            <h3>Statistical Mechanics: Partition Functions & Free Energy</h3>
+            <div class="note-meta">Last updated: Sep 2026 • Format: Web ($\LaTeX$) & PDF</div>
+            <p>
+                A quick breakdown of canonical ensembles and Helmholtz free energy $F = -k_B T \ln Z$, with applications to ideal gases and paramagnetism.
+            </p>
+            <a href="notes/stat_mech.pdf" class="btn" target="_blank">Download PDF</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name • Powered by GitHub Pages & KaTeX</p>
+    </footer>
+
+</body>
+</html>
